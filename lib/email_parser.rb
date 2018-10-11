@@ -12,7 +12,12 @@ class EmailParser
 
   def parse
     result = []
-    items = emails.split(", ")
+    items = emails.split(" ")
+    items.each do |address|
+      if address[address.length - 1] == ","
+        address.chop!
+      end
+  end
     result.push(items)
     result.flatten
   end
