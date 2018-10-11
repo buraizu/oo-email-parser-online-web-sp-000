@@ -17,7 +17,7 @@ class EmailParser
       if address[address.length - 1] == ","
         address.chop!
       end
-  end
+    end
     result.push(items)
     result.flatten.uniq
   end
