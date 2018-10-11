@@ -10,8 +10,11 @@ class EmailParser
     @emails = emails
   end
 
-  def self.parse
-
+  def parse
+    result = []
+    items = emails.split(", ")
+    result.push(items)
+    result.flatten
   end
 
 end
