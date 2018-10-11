@@ -19,7 +19,7 @@ class EmailParser
       end
   end
     result.push(items)
-    result.flatten
+    result.flatten.uniq
   end
 
 end
